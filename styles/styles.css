@@ -1,3 +1,13 @@
+:root {
+    --primary-color:var(--primary-color) #0d0f84;
+    --secondary-color:var(--primary-color) #69bd4d;
+    --accent-color1:var(--primary-color) #3b6669;
+    --accent-color2:var(--primary-color) #541c09;
+}
+body{
+    font-family: "Noto Sans", serif;
+    font-weight: 400;
+}
 nav{
     background-color: darkblue;
     padding: 10px;
@@ -7,8 +17,10 @@ nav a {
     display: block;
     padding: 20px;
 }
-h1 {
+h1, h2 {
+    font-family: "DynaPuff", serif;
     color: darkblue;
+    font-weight: 400;
 }
 main img {
     width: 150px;
