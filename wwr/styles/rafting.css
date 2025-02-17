@@ -136,6 +136,9 @@ footer {
     max-width: 100%;
     margin: 0;
 }
+footer p {
+    color: #541c09;
+}
 .social_links a {
     text-decoration: none;
     display: block;
@@ -260,4 +263,73 @@ footer {
 }
 .contact_us_trio button[type="submit"]:hover {
     background-color: #69bd4d;
+}
+/*Imagen de bienvenida para el home con el titulo, parrafo, fondo traslucido y todo eso*/
+.image-container {
+    position: relative;
+    width: 100%;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+.overlay h1, p {
+    margin: 0;
+    color: #f0f0f0;
+}
+.overlay p span {
+    color: cyan;
+}
+/* parte de home para la seccion de viajes y el boton gigante*/
+.trips-buttom-section {
+    width: 100%;
+    height: auto;
+    background-image: url('/wwr/images/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.left-trip-section {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-trip-section .trips-home-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.trips-home-content .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0d0f84;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+.trips-home-content .button:hover {
+    background-color: #69bd4d;
+}
+.right-empty {
+    width: 33.33%;
 }
