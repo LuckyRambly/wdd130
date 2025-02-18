@@ -14,7 +14,10 @@ p {
 }
 body {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 .hero {
     position: relative;
@@ -268,10 +271,14 @@ footer p {
 .image-container {
     position: relative;
     width: 100%;
+    height: 60vh;
+    overflow: hidden;
+
 }
 .image-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 .overlay {
@@ -287,10 +294,13 @@ footer p {
     color: white;
     text-align: center;
     flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .overlay h1, p {
-    margin: 0;
+    margin: 10px 0;
     color: #f0f0f0;
+    max-width: 80%;
 }
 .overlay p span {
     color: cyan;
@@ -316,6 +326,10 @@ footer p {
     color: white;
     text-align: center;
 }
+.trips-home-content h2, .trips-home-content p {
+    color: #f0f0f0;
+    text-align: left;
+}
 .trips-home-content .button {
     display: inline-block;
     padding: 15px 30px;
@@ -332,4 +346,188 @@ footer p {
 }
 .right-empty {
     width: 33.33%;
+}
+/*newsletter stuff*/
+.newsletter-signup {
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    width: 50%;
+}
+.newsletter-signup h2, .newsletter-signup p {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #541c09;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+.checkbox-label a {
+    color: blue;
+    text-decoration: none;
+}
+.checkbox-label a:hover {
+    text-decoration: underline;
+}
+button[type="submit"] {
+    background-color: #0d0f84;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+button[type="submit"]:hover {
+    background-color: #69bd4d;
+}
+.newsletter-container {
+    display: flex;
+    width: 95%;
+    background-color: #3b6669;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.newsletter-signup {
+    width: 40%;
+    padding: 20px;
+}
+.newsletter-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-image img {
+    max-width: 100%;
+    height: auto;
+}
+/*GRID section */
+.rafting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #3b6669;
+}
+.rafting-grid p, .rafting-grid h2 {
+    color: #f0f0f0;
+    text-align: left;
+    margin: 5px;
+}
+.rafting-image {
+    overflow: hidden;
+}
+.rafting-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.rafting-content {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.rafting-content h2 {
+    margin-bottom: 0px;
+}
+.button {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #0d0f84;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #69bd4d;
+}
+/*CSS for trips page*/
+.hero2 {
+    background-image: url('wwr/images/adventure1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero2 h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+.trip-descriptions {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.trip {
+    width: 30%;
+    text-align: center;
+}
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.trip h2 {
+    margin: 20px 0 10px;
+}
+.trip-table {
+    padding: 50px 0;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+}
+th {
+    background-color: #541c09;
+}
+.trip-table th {
+    color: #f0f0f0;
+}
+.trip p {
+    color: #541c09;
+    text-align: justify;
+}
+p {
+    margin: 0px 0px 0px 40px;
+    padding: 0px 10px 0px 0px;
+    display: block;
+    box-sizing: border-box;
 }
