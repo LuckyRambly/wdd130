@@ -175,6 +175,9 @@ footer p {
     padding: 10px;
     margin: 10px;
 }
+.about_us div p {
+    color: #541c09;
+}
 .our_team {
     text-align: center;
     padding: 20px;
