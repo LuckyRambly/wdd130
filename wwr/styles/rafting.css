@@ -47,7 +47,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(59,102,105,0.5);
+    background-color: rgba(0,0,0,0.7);
 }
 .hero article img {
     width: 240px;
@@ -89,6 +89,9 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#history-section div p {
+    color: #541c09;
 }
 #history-section div {
     display: grid;
@@ -158,7 +161,7 @@ footer p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url("/wwr/images/background2.jpg");
+    background-image: url("../images/background2.jpg"); /*background2*/
     background-size: cover;
     padding: 20px;
 }
@@ -309,7 +312,7 @@ footer p {
 .trips-buttom-section {
     width: 100%;
     height: auto;
-    background-image: url('/wwr/images/background2.jpg');
+    background-image: url('../images/background2.jpg'); /*background2 again*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -468,7 +471,7 @@ button[type="submit"]:hover {
 }
 /*CSS for trips page*/
 .hero2 {
-    background-image: url('wwr/images/adventure1.jpg');
+    background-image: url('../images/adventure1.jpg'); /*adventure1*/
     background-size: cover;
     background-position: center;
     color: #f0f0f0;
